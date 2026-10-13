@@ -1,0 +1,17 @@
+{
+  "id": "supertux",
+  "name": "SuperTux",
+  "author": "headshot2017",
+  "category": "juegos",
+  "license": "GPL-2.0",
+  "description": {
+    "es": "Port de SuperTux Milestone 1, el plataformas del pingüino Tux.",
+    "en": "Port of SuperTux Milestone 1, the platformer starring Tux the penguin."
+  },
+  "github": {
+    "repo": "headshot2017/supertux-ps2",
+    "tag": "v0.1.1a",
+    "asset": "supertux-ps2-usb.zip"
+  },
+  "sha256": "822b041bbd85bced2ed99e494cd4184bfc5badf9e6be9344f5615de49d6fe70c"
+}

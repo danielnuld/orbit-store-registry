@@ -1,0 +1,18 @@
+{
+  "id": "hddtester",
+  "name": "PS2 HDD Tester",
+  "author": "GrimBrew",
+  "category": "utilidades",
+  "license": "AFL-2.0",
+  "description": {
+    "es": "Mide la velocidad del disco duro interno de la consola.",
+    "en": "Measures the speed of the console's internal hard drive."
+  },
+  "github": {
+    "repo": "GrimBrew/PS2HDDTester",
+    "tag": "v1.0",
+    "asset": "HDDTester_*.zip"
+  },
+  "sha256": "c6e127992c51303fbcfc4fdda6651dc3c2dd46b2a0a77833da46945e5d0dd0d4",
+  "boot": "*/hddtester.elf"
+}

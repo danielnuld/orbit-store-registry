@@ -1,0 +1,17 @@
+{
+  "id": "pinball",
+  "name": "3D Pinball",
+  "author": "headshot2017",
+  "category": "juegos",
+  "license": "MIT",
+  "description": {
+    "es": "Port de 3D Pinball Space Cadet. Necesita los archivos de datos del juego original.",
+    "en": "3D Pinball Space Cadet port. Needs the original game's data files."
+  },
+  "github": {
+    "repo": "headshot2017/3dpinball-ps2",
+    "tag": "v0.3",
+    "asset": "3dpinball-ps2.elf"
+  },
+  "sha256": "15b2cbb3c4e54b5846a6c471c9f15262981da3489a01dffd7689e566df9bcbb3"
+}

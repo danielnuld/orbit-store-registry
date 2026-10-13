@@ -1,0 +1,17 @@
+{
+  "id": "pang",
+  "name": "Pang",
+  "author": "obiot",
+  "category": "juegos",
+  "license": "GPL-2.0",
+  "description": {
+    "es": "Remake del clásico arcade: revienta las burbujas con tu arpón.",
+    "en": "Remake of the arcade classic: pop the bubbles with your harpoon."
+  },
+  "github": {
+    "repo": "obiot/Pang-ps2",
+    "tag": "20060112",
+    "asset": "pang_ps2_bin_*.zip"
+  },
+  "sha256": "171d850bac45d22c0b2da9cb32f7dc63008f7ceeacf30f8b9fc27fe68c026fab"
+}

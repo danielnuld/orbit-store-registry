@@ -1,0 +1,17 @@
+{
+  "id": "crt-test-suite",
+  "name": "CRT Test Suite",
+  "author": "alekszverr-jpg",
+  "category": "utilidades",
+  "license": "MIT",
+  "description": {
+    "es": "Patrones de prueba para calibrar teles CRT en 240p y 480i.",
+    "en": "Test patterns to calibrate CRT TVs at 240p and 480i."
+  },
+  "github": {
+    "repo": "alekszverr-jpg/ps2-crt-test-suite",
+    "tag": "v1.3",
+    "asset": "PS2Grid.elf"
+  },
+  "sha256": "2eef61f0bbe2e68285e787a35a4e60062834782e44c316bcac714231d485d798"
+}

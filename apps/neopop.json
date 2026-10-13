@@ -1,0 +1,17 @@
+{
+  "id": "neopop",
+  "name": "NeoPop",
+  "author": "obiot",
+  "category": "emuladores",
+  "license": "GPL-3.0",
+  "description": {
+    "es": "Emulador de Neo Geo Pocket y Neo Geo Pocket Color.",
+    "en": "Neo Geo Pocket and Neo Geo Pocket Color emulator."
+  },
+  "github": {
+    "repo": "obiot/NeoPop-PS2",
+    "tag": "0.10",
+    "asset": "neopop-*.zip"
+  },
+  "sha256": "f37d784fe150ec3580c56ba92b2a000caf45fd4bb6d262c28d90545a48308b33"
+}

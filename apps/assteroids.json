@@ -1,0 +1,17 @@
+{
+  "id": "assteroids",
+  "name": "Assteroids",
+  "author": "jendo42",
+  "category": "juegos",
+  "license": "MIT",
+  "description": {
+    "es": "Clon del clásico Asteroids escrito para PS2.",
+    "en": "A clone of the classic Asteroids, written for the PS2."
+  },
+  "github": {
+    "repo": "jendo42/assteroids-ps2",
+    "tag": "R2",
+    "asset": "assteroids.elf"
+  },
+  "sha256": "aa41c481ee9a53aab6b518c8a411bebe26d2cd3adf4c9b4e78e04c5010a8af55"
+}

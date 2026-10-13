@@ -1,0 +1,17 @@
+{
+  "id": "ps2me",
+  "name": "PS2ME",
+  "author": "Wellinator",
+  "category": "emuladores",
+  "license": "GPL-2.0",
+  "description": {
+    "es": "Máquina virtual J2ME: juegos de móvil Java en la PS2.",
+    "en": "J2ME virtual machine: Java mobile games on the PS2."
+  },
+  "github": {
+    "repo": "Wellinator/PS2ME",
+    "tag": "v1.4.0",
+    "asset": "PS2ME-*.elf"
+  },
+  "sha256": "53cacfc3360efeb8bcf9233289874ca402474076771c1528420aaa74d2f8e0c4"
+}

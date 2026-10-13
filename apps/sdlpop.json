@@ -5,8 +5,8 @@
   "category": "juegos",
   "license": "GPL-3.0",
   "description": {
-    "es": "Port de SDLPoP, el Prince of Persia original.",
-    "en": "Port of SDLPoP, the original Prince of Persia."
+    "es": "Port de Prince of Persia (SDLPoP) para PlayStation 2",
+    "en": "Prince of Persia (SDLPoP) port for PlayStation 2"
   },
   "github": {
     "repo": "alekszverr-jpg/SDLPoP-PS2",

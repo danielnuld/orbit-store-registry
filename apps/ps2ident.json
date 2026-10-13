@@ -5,8 +5,8 @@
   "category": "utilidades",
   "license": "OFL-1.1",
   "description": {
-    "es": "Identifica el hardware de tu consola: modelo, chips, BIOS y lector.",
-    "en": "Identifies your console's hardware: model, chips, BIOS and drive."
+    "es": "PS2Ident es una herramienta de identificación que permite volcar los chips ROM y la NVRAM del MECHACON de una PlayStation 2. También recoge datos de la consola",
+    "en": "PS2Ident is an identification tool that allows dumps of a PlayStation 2 console's ROM chips and MECHACON NVRAM to be made. It will also gather data from the console"
   },
   "github": {
     "repo": "ps2homebrew/PS2Ident",

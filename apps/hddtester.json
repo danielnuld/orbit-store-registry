@@ -5,8 +5,8 @@
   "category": "utilidades",
   "license": "AFL-2.0",
   "description": {
-    "es": "Mide la velocidad del disco duro interno de la consola.",
-    "en": "Measures the speed of the console's internal hard drive."
+    "es": "Herramienta para medir la velocidad del disco duro en consolas PlayStation 2",
+    "en": "HDD speed test tool for PlayStation 2 consoles"
   },
   "github": {
     "repo": "GrimBrew/PS2HDDTester",

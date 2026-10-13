@@ -5,8 +5,8 @@
   "category": "utilidades",
   "license": "GPL-3.0",
   "description": {
-    "es": "Gestiona y respalda las memory cards de un sd2psx desde la consola.",
-    "en": "Manages and backs up an sd2psx's memory cards from the console."
+    "es": "Gestiona y respalda las memory cards de tu sd2psx, directamente en tu PS2.",
+    "en": "Manage and back up your sd2psx memory cards, right on your PS2."
   },
   "github": {
     "repo": "oMrRexD/sd2cloud",

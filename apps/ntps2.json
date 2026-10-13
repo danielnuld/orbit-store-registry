@@ -5,8 +5,8 @@
   "category": "utilidades",
   "license": "GPL-3.0",
   "description": {
-    "es": "Pone en hora el reloj de la consola por internet (NTP).",
-    "en": "Sets the console's clock over the internet (NTP)."
+    "es": "Un cliente NTP sencillo para la PS2. Un proyecto que me pareció interesante y atractivo, mi primer homebrew y mi primer trabajo para una consola retro.",
+    "en": "A simple NTP client for the PS2. A project I found interesting and appealing, my first bit of homebrew and first work written for a retro console."
   },
   "github": {
     "repo": "ShyavanS/NTPS2",

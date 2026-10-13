@@ -5,8 +5,8 @@
   "category": "emuladores",
   "license": "GPL-2.0",
   "description": {
-    "es": "Emulador de Master System y Game Gear.",
-    "en": "Sega Master System and Game Gear emulator."
+    "es": "Fork de PSMS Reloaded: emulador de Sega Master System y Game Gear para PS2",
+    "en": "Fork of PSMS Reloaded - Sega Master System & Game Gear emulator for PS2"
   },
   "github": {
     "repo": "infval/PSMS-Reloaded-New",

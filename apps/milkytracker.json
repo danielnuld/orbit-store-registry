@@ -5,8 +5,8 @@
   "category": "multimedia",
   "license": "GPL-3.0",
   "description": {
-    "es": "Tracker de música compatible con Fast Tracker 2: compón módulos .xm en la PS2.",
-    "en": "Fast Tracker 2 compatible music tracker: write .xm modules on the PS2."
+    "es": "Un tracker de música favorito, compatible con FT2, portado mal a PlayStation 2",
+    "en": "A favorite FT2 compatible music tracker ported badly to PlayStation 2"
   },
   "github": {
     "repo": "TheMorc/MilkyTrackerPS2",

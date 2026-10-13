@@ -5,8 +5,8 @@
   "category": "utilidades",
   "license": "CC0-1.0",
   "description": {
-    "es": "Comprueba que se puedan leer todos los sectores de un disco de PS2.",
-    "en": "Checks that every sector of a PS2 disc can be read."
+    "es": "Una utilidad sencilla para comprobar que se pueden leer todos los sectores de un disco de juego de PS2.",
+    "en": "A simple utility for verifying that every sector of a PS2 game disc can be read."
   },
   "github": {
     "repo": "b65sol/ps2-discscan",

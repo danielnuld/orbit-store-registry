@@ -5,8 +5,8 @@
   "category": "juegos",
   "license": "MIT",
   "description": {
-    "es": "Clon del clásico Asteroids escrito para PS2.",
-    "en": "A clone of the classic Asteroids, written for the PS2."
+    "es": "Un pequeño clon del clásico Asteroids escrito en C para PS2",
+    "en": "A small clone of classic game Asteroids written in C for PS2"
   },
   "github": {
     "repo": "jendo42/assteroids-ps2",

@@ -5,8 +5,8 @@
   "category": "juegos",
   "license": "GPL-2.0",
   "description": {
-    "es": "Remake del clásico arcade: revienta las burbujas con tu arpón.",
-    "en": "Remake of the arcade classic: pop the bubbles with your harpoon."
+    "es": "un remake del viejo juego arcade de bolas Pang para la PlayStation 2™",
+    "en": "a remake of the old arcade ball game Pang for the PlayStation 2™"
   },
   "github": {
     "repo": "obiot/Pang-ps2",

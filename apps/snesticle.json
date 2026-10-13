@@ -5,8 +5,8 @@
   "category": "emuladores",
   "license": "MIT",
   "description": {
-    "es": "Emulador de Super Nintendo, versión mantenida del SNESticle original.",
-    "en": "Super Nintendo emulator, a maintained build of the original SNESticle."
+    "es": "Un emulador de Super Nintendo para la Sony Playstation 2",
+    "en": "A Super Nintendo Emulator for Sony Playstation 2"
   },
   "github": {
     "repo": "hugorsgarcia/PS2SNESticle",

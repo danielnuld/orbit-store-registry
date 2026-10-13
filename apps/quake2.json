@@ -5,8 +5,8 @@
   "category": "juegos",
   "license": "GPL-2.0",
   "description": {
-    "es": "Port de Quake II. Necesita los archivos de datos del juego (los .pak), que pones tú.",
-    "en": "Quake II port. Needs the game's data files (the .pak files), which you provide."
+    "es": "Un port homebrew del Quake 2 de id Software para la consola PlayStation 2.",
+    "en": "A homebrew port of idSoftware's Quake 2 for the PlayStation 2 Console."
   },
   "github": {
     "repo": "glampert/quake2-ps2",

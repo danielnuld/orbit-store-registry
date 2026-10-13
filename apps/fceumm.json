@@ -5,8 +5,8 @@
   "category": "emuladores",
   "license": "GPL-2.0",
   "description": {
-    "es": "Emulador de NES y Famicom. Carga las ROMs desde la USB, el disco duro o un CD/DVD.",
-    "en": "NES and Famicom emulator. Loads ROMs from USB, the internal HDD or a CD/DVD."
+    "es": "FCEUmm-PS2",
+    "en": "FCEUmm-PS2"
   },
   "github": {
     "repo": "ps2homebrew/Fceumm-PS2",

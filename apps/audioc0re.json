@@ -5,8 +5,8 @@
   "category": "multimedia",
   "license": "MIT",
   "description": {
-    "es": "Reproductor de MP3 y WAV desde mass:/music, con título, artista y carátula.",
-    "en": "MP3 and WAV player from mass:/music, with title, artist and cover art."
+    "es": "Reproductor de música por USB para PlayStation 2.",
+    "en": "USB music player for PlayStation 2."
   },
   "github": {
     "repo": "MexrlDev/AudioC0rePS2",

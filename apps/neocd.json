@@ -5,8 +5,8 @@
   "category": "emuladores",
   "license": "GPL-2.0",
   "description": {
-    "es": "Emulador de Neo Geo CD. Necesita la BIOS de Neo Geo CD, que pones tú.",
-    "en": "Neo Geo CD emulator. Needs the Neo Geo CD BIOS, which you provide."
+    "es": "un emulador de NeoGeo CD de código abierto para la Sony Playstation2™",
+    "en": "an open source NeoGeo CD emulator for the Sony Playstation2™"
   },
   "github": {
     "repo": "obiot/NeoCD-PS2",

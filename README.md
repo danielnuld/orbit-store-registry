@@ -33,7 +33,7 @@ games. The PS2 app and the website read what this repo publishes; the binaries s
 |---|---|
 | `id` | 2-24 of `a-z 0-9 -`; the file name, and the install folder `APPS/<ID>` |
 | `category` | `utilidades`, `multimedia`, `emuladores` or `juegos` |
-| `description` | Spanish and English, one line, up to 200 characters each |
+| `description` | the repo's own GitHub description in `en` (or its README's first line if it has none) and a literal Spanish translation in `es`; one line, up to 200 characters each |
 | `github.asset` | the release asset's file name; `*` matches anything, so it keeps working on the next release |
 | `boot` | only for a zip with several ELFs: the one to run, path inside the zip (`*` allowed) |
 | `sha256` | of the asset: `python tools/catalog.py pin apps/<id>.json` writes it |

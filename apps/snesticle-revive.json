@@ -5,8 +5,8 @@
   "category": "emuladores",
   "license": "GPL-3.0",
   "description": {
-    "es": "Emulador de Super Nintendo, con NES incluido gracias a InfoNES.",
-    "en": "Super Nintendo emulator, with NES support through InfoNES."
+    "es": "Emulador homebrew de Super Nintendo para Playstation 2, basado originalmente en el emulador de Acer Addis.",
+    "en": "Homebrew Super Nintendo emulator for Playstation 2, originally based on the Acer Addis emulator."
   },
   "github": {
     "repo": "ReyFxck/SNESticleRevive",

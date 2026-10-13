@@ -5,8 +5,8 @@
   "category": "emuladores",
   "license": "GPL-3.0",
   "description": {
-    "es": "Emulador de Neo Geo Pocket y Neo Geo Pocket Color.",
-    "en": "Neo Geo Pocket and Neo Geo Pocket Color emulator."
+    "es": "un port para PS2 de Neopop, un emulador portable de \"NeoGeo Pocket (Color)\".",
+    "en": "a PS2 port of Neopop, a portable \"NeoGeo Pocket (Color)\" emulator."
   },
   "github": {
     "repo": "obiot/NeoPop-PS2",

@@ -5,8 +5,8 @@
   "category": "juegos",
   "license": "GPL-2.0",
   "description": {
-    "es": "Port de Duke Nukem 3D. Necesita el DUKE3D.GRP del juego (vale el shareware).",
-    "en": "Duke Nukem 3D port. Needs the game's DUKE3D.GRP (the shareware one works)."
+    "es": "Port de Duke Nukem 3D para PlayStation 2",
+    "en": "PlayStation 2 port of Duke Nukem 3D"
   },
   "github": {
     "repo": "Arawn-Davies/ps2uke",

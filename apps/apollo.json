@@ -5,8 +5,8 @@
   "category": "utilidades",
   "license": "GPL-3.0",
   "description": {
-    "es": "Gestor de partidas guardadas: copia, exporta, importa y aplica trucos a tus saves.",
-    "en": "Save game manager: copy, export, import and patch your saves."
+    "es": "Apollo Save Tool (PS2)",
+    "en": "Apollo Save Tool (PS2)"
   },
   "github": {
     "repo": "bucanero/apollo-ps2",

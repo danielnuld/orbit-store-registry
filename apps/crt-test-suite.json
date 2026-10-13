@@ -5,8 +5,8 @@
   "category": "utilidades",
   "license": "MIT",
   "description": {
-    "es": "Patrones de prueba para calibrar teles CRT en 240p y 480i.",
-    "en": "Test patterns to calibrate CRT TVs at 240p and 480i."
+    "es": "Suite de calibración de CRT y patrones de prueba de video para PlayStation 2, compatible con 240p, 288p, 480i y 576i.",
+    "en": "CRT calibration and video test pattern suite for PlayStation 2, supporting 240p, 288p, 480i and 576i."
   },
   "github": {
     "repo": "alekszverr-jpg/ps2-crt-test-suite",

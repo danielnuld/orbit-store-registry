@@ -5,8 +5,8 @@
   "category": "juegos",
   "license": "GPL-2.0",
   "description": {
-    "es": "Combates multijugador al estilo Mario: salta sobre tus rivales.",
-    "en": "Mario-style multiplayer deathmatch: stomp your rivals."
+    "es": "un juego de combates a muerte de Super Mario para la PlayStation 2™",
+    "en": "a Super Mario Death match game for the PlayStation 2™"
   },
   "github": {
     "repo": "obiot/SMW-PS2",

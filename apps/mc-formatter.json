@@ -5,8 +5,8 @@
   "category": "utilidades",
   "license": "AFL-3.0",
   "description": {
-    "es": "Formatea las memory cards de las ranuras 1 y 2. Borra todo lo que tengan.",
-    "en": "Formats the memory cards in slots 1 and 2. Erases everything on them."
+    "es": "Utilidad homebrew de PS2 que formatea las memory cards de las ranuras 1 y 2",
+    "en": "PS2 Homebrew Utility that will format both Memory Card Slot 1 and 2"
   },
   "github": {
     "repo": "Zero1UP/PS2-Memory-Card-Formatter",

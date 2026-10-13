@@ -1,0 +1,17 @@
+{
+  "id": "ps2ident",
+  "name": "PS2Ident",
+  "author": "ps2homebrew",
+  "category": "utilidades",
+  "license": "OFL-1.1",
+  "description": {
+    "es": "Identifica el hardware de tu consola: modelo, chips, BIOS y lector.",
+    "en": "Identifies your console's hardware: model, chips, BIOS and drive."
+  },
+  "github": {
+    "repo": "ps2homebrew/PS2Ident",
+    "tag": "stable",
+    "asset": "PS2Ident-*-PS2TOOL.zip"
+  },
+  "sha256": "cb92444ad4e01052e05ae9ef9f02354a153cc6b77811b4d1ca4dd709dcd0baca"
+}

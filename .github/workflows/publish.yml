@@ -1,0 +1,33 @@
+# main -> GitHub Pages: catalog.tsv + catalog.sig for the PS2, catalog.json + index.html for the website.
+# Needs the secret ORBIT_STORE_KEY (the store's own P-256 private key, PEM) and Pages set to "GitHub Actions".
+name: publish
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/catalog.py selftest
+      - run: python3 tools/catalog.py build out
+        env:
+          ORBIT_STORE_KEY: ${{ secrets.ORBIT_STORE_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+      - run: test -f out/catalog.sig || { echo "::error::ORBIT_STORE_KEY is not set: the PS2 would refuse the catalog"; exit 1; }
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+      - id: deploy
+        uses: actions/deploy-pages@v4

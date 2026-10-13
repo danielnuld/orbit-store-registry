@@ -1,0 +1,31 @@
+# Nightly: GitHub entries with a newer release get a PR with the new tag and sha256. Nothing reaches the consoles
+# until the maintainer merges it. (PRs opened with GITHUB_TOKEN do not run check.yml; bump already checks the asset.)
+name: bump
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/catalog.py bump | tee bump.log
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: open a PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git diff --quiet -- apps && exit 0
+          branch="bump/$(date -u +%Y-%m-%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git commit -qam "bump: new releases"
+          git push -f origin "$branch"
+          gh pr create --base main --head "$branch" --title "bump: new releases ($(date -u +%Y-%m-%d))" \
+            --body "$(grep -- '->' bump.log)" || echo "PR already open"

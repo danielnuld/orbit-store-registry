@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ORBIT Store</title>
+<meta name="description" content="Catálogo de apps caseras para PlayStation 2: emuladores, multimedia, utilidades y juegos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&family=Sora:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root { --night: #04060E; --navy: #0D1736; --ice: #7FE7FF; --iris: #C08BFF; --text: #EEF3FF; --text2: #A9B6D3; --label: #8FA0C4;
+        --line: rgba(169,182,211,0.30); --chrome: linear-gradient(180deg, #F4F8FF 0%, #BAC6DE 100%); }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; color: var(--text); font: 16px/1.5 Sora, system-ui, sans-serif;
+       background: linear-gradient(180deg, var(--navy) 0%, #080D22 40%, var(--night) 100%) fixed; }
+a { color: var(--ice); } a:hover { color: #C9F6FF; }
+button, input { font: inherit; color: inherit; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 24px 16px 48px; }
+header { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between;
+         padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.brand { display: flex; gap: 14px; align-items: center; }
+.orb { width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0;
+       background: radial-gradient(circle at 35% 30%, #fff 0%, #C9D4EA 22%, #6F7E9E 58%, #1B2546 100%);
+       box-shadow: 0 0 0 1px rgba(255,255,255,0.35), 0 0 20px rgba(127,231,255,0.35); }
+.chrome { font-family: Unbounded, sans-serif; font-weight: 700; letter-spacing: -0.5px; margin: 0;
+          background: linear-gradient(180deg, #fff 0%, #E3EAF8 45%, #9FADCB 55%, #F2F6FF 100%);
+          -webkit-background-clip: text; background-clip: text; color: transparent; }
+.mono { font-family: 'Space Mono', monospace; }
+.tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.pill { height: 36px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); background: transparent;
+        color: var(--text2); cursor: pointer; }
+.pill[aria-pressed="true"] { background: var(--chrome); color: #0A1026; border-color: transparent; font-weight: 600; }
+.search { height: 36px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--line); background: rgba(14,22,50,0.6);
+          min-width: 0; width: 200px; }
+main { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 24px; align-items: flex-start; }
+.list { flex: 1 1 340px; min-width: 0; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.row { display: flex; gap: 14px; align-items: center; width: 100%; min-height: 60px; padding: 8px 14px 8px 8px; border-radius: 16px;
+       border: 1px solid transparent; background: transparent; text-align: left; cursor: pointer; }
+.row:hover { background: rgba(14,22,50,0.6); }
+.row[aria-current="true"] { border-color: rgba(127,231,255,0.65); box-shadow: 0 0 24px rgba(127,231,255,0.2);
+       background: linear-gradient(90deg, rgba(127,231,255,0.16) 0%, rgba(14,22,50,0.55) 100%); }
+.tile { width: 44px; height: 44px; flex-shrink: 0; border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+.row .who { display: block; font-size: 12px; color: var(--label); }
+.card { flex: 999 1 520px; min-width: 0; padding: 26px 28px; border-radius: 22px; border: 1px solid rgba(127,231,255,0.30);
+        background: linear-gradient(180deg, rgba(40,58,110,0.5) 0%, rgba(14,22,50,0.55) 100%); display: flex; flex-direction: column; gap: 18px; }
+.top { display: flex; flex-wrap: wrap; gap: 22px; align-items: flex-start; }
+.cover { width: 124px; height: 176px; flex-shrink: 0; border-radius: 6px; display: flex; align-items: center; justify-content: center;
+         box-shadow: 0 0 0 1px rgba(255,255,255,0.3), 0 10px 30px rgba(0,0,0,0.45); }
+.ring { width: 74px; height: 74px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        border: 2px solid rgba(255,255,255,0.55); background: rgba(4,6,14,0.3); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-size: 13px; padding: 2px 12px; border-radius: 999px; border: 1px solid rgba(169,182,211,0.45); color: var(--text2); }
+.chip.solid { background: var(--chrome); color: #0A1026; border-color: transparent; font-weight: 600; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+.cell { padding: 10px 14px; border-radius: 14px; background: rgba(14,22,50,0.55); border: 1px solid rgba(169,182,211,0.18); }
+.cell span { display: block; font-size: 11px; letter-spacing: 2px; color: var(--label); }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 20px; border-radius: 999px; text-decoration: none;
+       border: 1px solid var(--line); background: rgba(14,22,50,0.6); color: var(--text); font-weight: 500; cursor: pointer; }
+.btn.main { background: var(--chrome); color: #0A1026; border-color: transparent; font-weight: 600; box-shadow: 0 0 22px rgba(127,231,255,0.35); }
+.how { margin: 0; padding-left: 20px; color: var(--text2); font-size: 15px; }
+.sha { font-size: 12px; color: var(--label); word-break: break-all; }
+footer { margin-top: 40px; font-size: 14px; color: var(--label); }
+.empty { color: var(--text2); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><div class="orb"></div><h1 class="chrome" style="font-size: 26px">ORBIT Store</h1></div>
+    <div class="tools">
+      <nav class="tools" id="cats" aria-label="Categorías"></nav>
+      <label class="mono" style="position: absolute; left: -9999px" for="q">Buscar</label>
+      <input class="search" id="q" type="search" placeholder="Buscar…">
+      <button class="pill" id="lang" type="button">EN</button>
+    </div>
+  </header>
+  <main>
+    <ul class="list" id="list" aria-label="Apps"></ul>
+    <section class="card" id="card" aria-live="polite"><p class="empty">Cargando el catálogo…</p></section>
+  </main>
+  <footer id="foot"></footer>
+</div>
+<script>
+const T = {
+  es: { all: 'Todas', utilidades: 'Utilidades', multimedia: 'Multimedia', emuladores: 'Emuladores', juegos: 'Juegos',
+        search: 'Buscar…', none: 'No hay apps que coincidan.', fail: 'No se pudo cargar el catálogo.', version: 'VERSIÓN', size: 'TAMAÑO',
+        license: 'LICENCIA', origin: 'ORIGEN', ext: 'Externa', download: 'Descargar', cfg: 'title.cfg', repo: 'Ver en GitHub',
+        how: 'Instalación a mano', step1: 'Crea en tu USB la carpeta', step2zip: 'Descomprime ahí el zip.', step2elf: 'Copia ahí el ELF descargado.',
+        step3: 'Copia también el title.cfg. ORBIT (y OPL) mostrarán la app en APPS.', app: 'Con la app ORBIT Store en la consola, todo esto es automático.',
+        foot: 'Cada descarga sale del release de su autor; el sha256 es el que revisamos. ¿Quieres añadir tu app? ' },
+  en: { all: 'All', utilidades: 'Utilities', multimedia: 'Media', emuladores: 'Emulators', juegos: 'Games',
+        search: 'Search…', none: 'No apps match.', fail: 'Could not load the catalog.', version: 'VERSION', size: 'SIZE',
+        license: 'LICENSE', origin: 'SOURCE', ext: 'External', download: 'Download', cfg: 'title.cfg', repo: 'View on GitHub',
+        how: 'Manual install', step1: 'On your USB drive, create the folder', step2zip: 'Unzip the download there.', step2elf: 'Copy the downloaded ELF there.',
+        step3: 'Copy the title.cfg too. ORBIT (and OPL) will list the app under APPS.', app: 'With the ORBIT Store app on the console, all of this is automatic.',
+        foot: 'Every download comes from its author\'s release; the sha256 is the one we reviewed. Want to add your app? ' }
+};
+const ICON = {
+  utilidades: 'M7 7h10v10H7zM10 2v5M14 2v5M10 17v5M14 17v5M2 10h5M2 14h5M17 10h5M17 14h5',
+  multimedia: 'M3 5h18v14H3zM7 5v14M17 5v14M3 9h4M3 15h4M17 9h4M17 15h4',
+  emuladores: 'M6 8h12a4 4 0 0 1 4 4v1a3 3 0 0 1-5.4 1.8L15 13H9l-1.6 1.8A3 3 0 0 1 2 13v-1a4 4 0 0 1 4-4zM7 10.5v3M5.5 12h3M16 11h.01M18 13h.01',
+  juegos: 'M13 2L4 14h7l-1 8l9-12h-7z'
+};
+const REGISTRY = 'https://github.com/danielnuld/orbit-store-registry';
+let apps = [], cat = 'all', sel = null, lang = (navigator.language || 'es').startsWith('es') ? 'es' : 'en';
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+function hue(id) { let h = 0; for (const c of id) h = (h * 31 + c.charCodeAt(0)) % 360; return h; }
+function art(a) {
+  const h = hue(a.id);
+  return `background: radial-gradient(circle at 50% 40%, hsl(${h} 60% 50%) 0%, hsl(${h} 60% 10%) 78%)`;
+}
+function svg(a, px) {
+  return `<svg aria-hidden="true" width="${px}" height="${px}" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="${ICON[a.category] || ICON.utilidades}"/></svg>`;
+}
+function mb(n) { return (n / 1048576).toLocaleString(lang, { maximumFractionDigits: 1 }) + ' MB'; }
+function folder(a) { return 'APPS/' + a.id.toUpperCase(); }
+function cfg(a) {
+  const boot = a.kind === 'zip' ? a.boot : a.url.split('/').pop();
+  return `title=${a.name}\nboot=${boot}\n`;
+}
+function visible() {
+  const q = $('q').value.trim().toLowerCase();
+  return apps.filter((a) => (cat === 'all' || a.category === cat) &&
+    (!q || (a.name + ' ' + a.author + ' ' + a['desc_' + lang]).toLowerCase().includes(q)));
+}
+function render() {
+  const t = T[lang];
+  document.documentElement.lang = lang;
+  $('lang').textContent = lang === 'es' ? 'EN' : 'ES';
+  $('q').placeholder = t.search;
+  $('cats').innerHTML = ['all', 'utilidades', 'multimedia', 'emuladores', 'juegos'].map((c) =>
+    `<button class="pill" type="button" data-cat="${c}" aria-pressed="${c === cat}">${t[c]}</button>`).join('');
+  const v = visible();
+  if (!v.some((a) => a.id === sel)) sel = v.length ? v[0].id : null;
+  $('list').innerHTML = v.map((a) => `<li><button class="row" type="button" data-id="${esc(a.id)}" aria-current="${a.id === sel}">
+      <span class="tile" style="${art(a)}">${svg(a, 24)}</span>
+      <span style="min-width: 0"><strong style="font-weight: 600">${esc(a.name)}</strong>
+      <span class="who mono">${esc(a.author)} · ${esc(a.version)}</span></span></button></li>`).join('');
+  const a = apps.find((x) => x.id === sel);
+  $('card').innerHTML = !a ? `<p class="empty">${t.none}</p>` : `
+    <div class="top">
+      <div class="cover" style="${art(a)}"><div class="ring">${svg(a, 40)}</div></div>
+      <div style="display: flex; flex-direction: column; gap: 12px; flex: 1 1 260px; min-width: 0">
+        <h2 class="chrome" style="font-size: 30px; line-height: 1.1">${esc(a.name)}</h2>
+        <div class="chips"><span class="chip mono">${esc(a.author)}</span><span class="chip solid">${t[a.category]}</span>${a.repo ? '' : `<span class="chip" style="color: var(--iris); border-color: rgba(192,139,255,0.55)">${t.ext}</span>`}</div>
+        <p style="margin: 0; color: var(--text2)">${esc(a['desc_' + lang])}</p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="cell"><span>${t.version}</span><span class="mono" style="font-size: 15px; letter-spacing: 0; color: var(--text)">${esc(a.version)}</span></div>
+      <div class="cell"><span>${t.size}</span><span class="mono" style="font-size: 15px; letter-spacing: 0; color: var(--text)">${mb(+a.size)}</span></div>
+      <div class="cell"><span>${t.license}</span><span class="mono" style="font-size: 15px; letter-spacing: 0; color: var(--text)">${esc(a.license)}</span></div>
+      <div class="cell"><span>${t.origin}</span><span class="mono" style="font-size: 15px; letter-spacing: 0; color: var(--text)">${a.repo ? 'GITHUB' : 'EXT'}</span></div>
+    </div>
+    <div class="actions">
+      <a class="btn main" href="${esc(a.url)}">${t.download} (${a.kind.toUpperCase()})</a>
+      <a class="btn" id="cfg" href="#" download="title.cfg">${t.cfg}</a>
+      ${a.repo ? `<a class="btn" href="https://github.com/${esc(a.repo)}">${t.repo}</a>` : ''}
+    </div>
+    <div>
+      <strong style="font-weight: 600">${t.how}</strong>
+      <ol class="how">
+        <li>${t.step1} <span class="mono" style="color: var(--ice)">${folder(a)}</span></li>
+        <li>${a.kind === 'zip' ? t.step2zip : t.step2elf}</li>
+        <li>${t.step3}</li>
+      </ol>
+      <p style="margin: 8px 0 0; font-size: 14px; color: var(--label)">${t.app}</p>
+    </div>
+    <div class="sha mono">sha256 ${esc(a.sha256)}</div>`;
+  if (a) $('cfg').href = URL.createObjectURL(new Blob([cfg(a)], { type: 'text/plain' }));
+  $('foot').innerHTML = `${t.foot}<a href="${REGISTRY}">${REGISTRY.replace('https://', '')}</a>`;
+}
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-cat], [data-id], #lang');
+  if (!b) return;
+  if (b.id === 'lang') lang = lang === 'es' ? 'en' : 'es';
+  else if (b.dataset.cat) cat = b.dataset.cat;
+  else sel = b.dataset.id;
+  render();
+  if (b.dataset.id && matchMedia('(max-width: 900px)').matches) $('card').scrollIntoView({ behavior: 'smooth' }); // card is below the list
+});
+$('q').addEventListener('input', render);
+fetch('catalog.json').then((r) => r.json()).then((d) => { apps = d.sort((x, y) => x.name.localeCompare(y.name)); render(); })
+  .catch(() => { $('card').innerHTML = `<p class="empty">${T[lang].fail}</p>`; });
+</script>
+</body>
+</html>

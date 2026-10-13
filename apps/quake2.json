@@ -1,0 +1,18 @@
+{
+  "id": "quake2",
+  "name": "Quake II",
+  "author": "glampert",
+  "category": "juegos",
+  "license": "GPL-2.0",
+  "description": {
+    "es": "Port de Quake II. Necesita los archivos de datos del juego (los .pak), que pones tú.",
+    "en": "Quake II port. Needs the game's data files (the .pak files), which you provide."
+  },
+  "github": {
+    "repo": "glampert/quake2-ps2",
+    "tag": "v3.21",
+    "asset": "q2ps2_release_*.zip"
+  },
+  "sha256": "81727c62f7c07de419b72959d23be465a9f3a3dfab43cc1561f9bc36d62f4a2f",
+  "boot": "*/quake2.elf"
+}

@@ -1,0 +1,59 @@
+name: Enviar una app / Submit an app
+description: Propón una app de PS2 para ORBIT Store / Propose a PS2 app for ORBIT Store
+title: "app: "
+labels: [submission]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        La app tiene que estar en un **release de GitHub** de su repo, como `.elf` o `.zip` con el ELF dentro, y el repo
+        tiene que tener licencia. Nada de BIOS, juegos comerciales ni ROMs.
+        The app must be in a **GitHub release** of its repo, as an `.elf` or a `.zip` with the ELF inside, and the repo
+        needs a licence. No BIOS, commercial games or ROMs.
+  - type: input
+    id: repo
+    attributes:
+      label: Repo (owner/name)
+      placeholder: ps2homebrew/Fceumm-PS2
+    validations:
+      required: true
+  - type: input
+    id: tag
+    attributes:
+      label: Release tag
+      placeholder: v0.3.3
+    validations:
+      required: true
+  - type: input
+    id: asset
+    attributes:
+      label: Asset (file name; * allowed)
+      placeholder: fceu-packed.*.cdvdsupport.elf
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Categoría / Category
+      options: [utilidades, multimedia, emuladores, juegos]
+    validations:
+      required: true
+  - type: input
+    id: desc_es
+    attributes:
+      label: Descripción en español (máx. 200)
+    validations:
+      required: true
+  - type: input
+    id: desc_en
+    attributes:
+      label: Description in English (max 200)
+    validations:
+      required: true
+  - type: checkboxes
+    id: ok
+    attributes:
+      label: Confirmación / Confirmation
+      options:
+        - label: Soy el autor o tengo su permiso, y la app corre en una PS2 real o en PCSX2 / I am the author or have their permission, and the app runs on a real PS2 or PCSX2
+          required: true

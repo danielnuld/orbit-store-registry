@@ -1,0 +1,17 @@
+{
+  "id": "sd2cloud",
+  "name": "sd2cloud",
+  "author": "oMrRexD",
+  "category": "utilidades",
+  "license": "GPL-3.0",
+  "description": {
+    "es": "Gestiona y respalda las memory cards de un sd2psx desde la consola.",
+    "en": "Manages and backs up an sd2psx's memory cards from the console."
+  },
+  "github": {
+    "repo": "oMrRexD/sd2cloud",
+    "tag": "v1.7.1",
+    "asset": "SD2CLOUD.ELF"
+  },
+  "sha256": "cd1e1a858dc3086fb0fd1b908dc5d0e6017ad2dc5c0cc78cc3473295b63d42dc"
+}

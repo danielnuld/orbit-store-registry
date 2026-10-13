@@ -1,0 +1,30 @@
+# Every PR: the tool's self-test, then each changed apps/*.json is validated and its asset downloaded and matched
+# against the pinned sha256. External entries ('url' instead of 'github') only from the repository owner.
+name: check
+on:
+  pull_request:
+    paths: ["apps/**", "tools/**", "site/**"]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: python3 tools/catalog.py selftest
+      - name: changed entries
+        env:
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+          OWNER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          files=$(git diff --name-only --diff-filter=AM "origin/${{ github.base_ref }}...HEAD" -- 'apps/*.json')
+          [ -z "$files" ] && { echo "no entries changed"; exit 0; }
+          for f in $files; do
+            if python3 -c "import json,sys; sys.exit(0 if 'url' in json.load(open('$f')) else 1)" && [ "$AUTHOR" != "$OWNER" ]; then
+              echo "::error file=$f::external entries ('url') are added by the maintainer only; use 'github'"; exit 1
+            fi
+          done
+          python3 tools/catalog.py check $files

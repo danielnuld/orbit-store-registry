@@ -1,0 +1,17 @@
+{
+  "id": "audioc0re",
+  "name": "AudioC0re",
+  "author": "MexrlDev",
+  "category": "multimedia",
+  "license": "MIT",
+  "description": {
+    "es": "Reproductor de MP3 y WAV desde mass:/music, con título, artista y carátula.",
+    "en": "MP3 and WAV player from mass:/music, with title, artist and cover art."
+  },
+  "github": {
+    "repo": "MexrlDev/AudioC0rePS2",
+    "tag": "V.1.0",
+    "asset": "AudioC0re.elf"
+  },
+  "sha256": "ceb295d93c87298c1b2864d0177a1eb7d1cebac428e275fe42291185320047b0"
+}

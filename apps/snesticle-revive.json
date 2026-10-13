@@ -1,0 +1,18 @@
+{
+  "id": "snesticle-revive",
+  "name": "SNESticle Revive",
+  "author": "ReyFxck",
+  "category": "emuladores",
+  "license": "GPL-3.0",
+  "description": {
+    "es": "Emulador de Super Nintendo, con NES incluido gracias a InfoNES.",
+    "en": "Super Nintendo emulator, with NES support through InfoNES."
+  },
+  "github": {
+    "repo": "ReyFxck/SNESticleRevive",
+    "tag": "1.1.1",
+    "asset": "SNESticleRevive.v*.zip"
+  },
+  "sha256": "b21bc70f503ffe8c0cf8ab429ccaf3f2851ac1eb43b268303fd49c6e09558581",
+  "boot": "APPS/SNESticleRevive v*.elf"
+}

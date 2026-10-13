@@ -2,8 +2,7 @@
 # against the pinned sha256. External entries ('url' instead of 'github') only from the repository owner.
 name: check
 on:
-  pull_request:
-    paths: ["apps/**", "tools/**", "site/**"]
+  pull_request:  # no path filter: it is a required check on main, so it has to report on every PR
 permissions:
   contents: read
 jobs:

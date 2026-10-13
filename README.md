@@ -54,7 +54,8 @@ consoles when the maintainer merges it, so a hijacked release never installs by 
 - `catalog.tsv`: one app per line, tab-separated (`tools/catalog.py` FIELDS), with the resolved download URL, size,
   sha256 and the ELF to boot;
 - `catalog.sig`: ECDSA P-256 signature (DER, over SHA-256) made with the store's own key, the `ORBIT_STORE_KEY`
-  secret. The PS2 app installs nothing unless it verifies and the download matches size and sha256.
+  secret; its public half is `store-key.pub.pem`. The PS2 app installs nothing unless it verifies and the download
+  matches size and sha256.
 - `catalog.json` and `index.html`: the website.
 
 `tools/catalog.py` uses only Python's standard library (plus `openssl` to sign). `python tools/catalog.py selftest`

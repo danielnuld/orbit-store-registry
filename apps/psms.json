@@ -1,0 +1,17 @@
+{
+  "id": "psms",
+  "name": "PSMS Reloaded",
+  "author": "infval",
+  "category": "emuladores",
+  "license": "GPL-2.0",
+  "description": {
+    "es": "Emulador de Master System y Game Gear.",
+    "en": "Sega Master System and Game Gear emulator."
+  },
+  "github": {
+    "repo": "infval/PSMS-Reloaded-New",
+    "tag": "v0.6.3",
+    "asset": "psms-packed.*.elf"
+  },
+  "sha256": "af0fcee8af1a1fa6e4d885fe4f0461a9a72ac65341ad1a92ed09c06c7da01adc"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "milkytracker",
+  "name": "MilkyTracker",
+  "author": "TheMorc",
+  "category": "multimedia",
+  "license": "GPL-3.0",
+  "description": {
+    "es": "Tracker de música compatible con Fast Tracker 2: compón módulos .xm en la PS2.",
+    "en": "Fast Tracker 2 compatible music tracker: write .xm modules on the PS2."
+  },
+  "github": {
+    "repo": "TheMorc/MilkyTrackerPS2",
+    "tag": "1.04",
+    "asset": "milkytracker.elf"
+  },
+  "sha256": "23322d31a4ce96c435841f7a651a565dd33d51c69edf0fd675d7c4176636d99c"
+}

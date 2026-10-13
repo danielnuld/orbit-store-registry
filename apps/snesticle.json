@@ -1,0 +1,17 @@
+{
+  "id": "snesticle",
+  "name": "SNESticle",
+  "author": "hugorsgarcia",
+  "category": "emuladores",
+  "license": "MIT",
+  "description": {
+    "es": "Emulador de Super Nintendo, versión mantenida del SNESticle original.",
+    "en": "Super Nintendo emulator, a maintained build of the original SNESticle."
+  },
+  "github": {
+    "repo": "hugorsgarcia/PS2SNESticle",
+    "tag": "v0.3.5",
+    "asset": "SNESticle.elf"
+  },
+  "sha256": "8ce824651b3c551dad028236f46911412d87b2b5efdc27c44785d6e613babe6a"
+}

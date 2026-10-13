@@ -1,0 +1,17 @@
+{
+  "id": "neocd",
+  "name": "NeoCD",
+  "author": "obiot",
+  "category": "emuladores",
+  "license": "GPL-2.0",
+  "description": {
+    "es": "Emulador de Neo Geo CD. Necesita la BIOS de Neo Geo CD, que pones tú.",
+    "en": "Neo Geo CD emulator. Needs the Neo Geo CD BIOS, which you provide."
+  },
+  "github": {
+    "repo": "obiot/NeoCD-PS2",
+    "tag": "0.6c",
+    "asset": "neocd_ps2_*.zip"
+  },
+  "sha256": "007d6369ee1d25890e39ab236c954ffd6ac7cc3ec5407b8e418eae25aef37168"
+}

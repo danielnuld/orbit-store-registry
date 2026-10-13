@@ -1,0 +1,17 @@
+{
+  "id": "discscan",
+  "name": "Disc Scan",
+  "author": "b65sol",
+  "category": "utilidades",
+  "license": "CC0-1.0",
+  "description": {
+    "es": "Comprueba que se puedan leer todos los sectores de un disco de PS2.",
+    "en": "Checks that every sector of a PS2 disc can be read."
+  },
+  "github": {
+    "repo": "b65sol/ps2-discscan",
+    "tag": "0.1",
+    "asset": "discscan.elf"
+  },
+  "sha256": "3ab33215d9a9db3103a199b7335dd738c1f0210d1193dfab97a8d9a358b81a15"
+}

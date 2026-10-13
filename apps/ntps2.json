@@ -1,0 +1,17 @@
+{
+  "id": "ntps2",
+  "name": "NTPS2",
+  "author": "ShyavanS",
+  "category": "utilidades",
+  "license": "GPL-3.0",
+  "description": {
+    "es": "Pone en hora el reloj de la consola por internet (NTP).",
+    "en": "Sets the console's clock over the internet (NTP)."
+  },
+  "github": {
+    "repo": "ShyavanS/NTPS2",
+    "tag": "v1.2.1",
+    "asset": "NTPS2.ELF"
+  },
+  "sha256": "b8d268516acf3bbdf53db70e87aba0fb35b8f50c1d960a3ad62dac50f579b53b"
+}

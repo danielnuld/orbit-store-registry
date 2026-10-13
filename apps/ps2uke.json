@@ -1,0 +1,17 @@
+{
+  "id": "ps2uke",
+  "name": "PS2uke",
+  "author": "Arawn-Davies",
+  "category": "juegos",
+  "license": "GPL-2.0",
+  "description": {
+    "es": "Port de Duke Nukem 3D. Necesita el DUKE3D.GRP del juego (vale el shareware).",
+    "en": "Duke Nukem 3D port. Needs the game's DUKE3D.GRP (the shareware one works)."
+  },
+  "github": {
+    "repo": "Arawn-Davies/ps2uke",
+    "tag": "v0.1.0",
+    "asset": "PS2UKE.ELF"
+  },
+  "sha256": "d3fdbe5f5a0ee5aa2575a35a49e17f83fbe8b76f892fc2883564b2ec3a29f48e"
+}

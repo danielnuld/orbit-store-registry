@@ -1,0 +1,17 @@
+{
+  "id": "mc-formatter",
+  "name": "Memory Card Formatter",
+  "author": "Zero1UP",
+  "category": "utilidades",
+  "license": "AFL-3.0",
+  "description": {
+    "es": "Formatea las memory cards de las ranuras 1 y 2. Borra todo lo que tengan.",
+    "en": "Formats the memory cards in slots 1 and 2. Erases everything on them."
+  },
+  "github": {
+    "repo": "Zero1UP/PS2-Memory-Card-Formatter",
+    "tag": "v1.2",
+    "asset": "MFU-Packed.elf"
+  },
+  "sha256": "c3cbb5f09c9a033b35901f2a25d1d529286fdf88060df6af4f343dbed139b601"
+}

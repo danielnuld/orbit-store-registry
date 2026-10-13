@@ -1,0 +1,17 @@
+{
+  "id": "sdlpop",
+  "name": "Prince of Persia",
+  "author": "alekszverr-jpg",
+  "category": "juegos",
+  "license": "GPL-3.0",
+  "description": {
+    "es": "Port de SDLPoP, el Prince of Persia original.",
+    "en": "Port of SDLPoP, the original Prince of Persia."
+  },
+  "github": {
+    "repo": "alekszverr-jpg/SDLPoP-PS2",
+    "tag": "ps2-v1.0.0",
+    "asset": "SDLPoP-PS2.zip"
+  },
+  "sha256": "1318f288bad0236f5c8083e52fb992beb635debf65c66a4e5831d72b4823eac2"
+}

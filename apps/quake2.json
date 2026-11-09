@@ -10,9 +10,9 @@
   },
   "github": {
     "repo": "glampert/quake2-ps2",
-    "tag": "v3.21",
+    "tag": "v3.22",
     "asset": "q2ps2_release_*.zip"
   },
-  "sha256": "81727c62f7c07de419b72959d23be465a9f3a3dfab43cc1561f9bc36d62f4a2f",
+  "sha256": "d9b3c6ded7c87edf212b6bd114f8f6dc36b8e9beda7147857bae543d44995b78",
   "boot": "*/quake2.elf"
 }
